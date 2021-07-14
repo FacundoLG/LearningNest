@@ -1,4 +1,5 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
+import { off } from 'process';
 import { AppService } from './app.service';
 
 @Controller()
@@ -13,4 +14,7 @@ export class AppController {
   newEnnpoint(){
     return 'hola mano'
   }
+
+
+ 
 }
